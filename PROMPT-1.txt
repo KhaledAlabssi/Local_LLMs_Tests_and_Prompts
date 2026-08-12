@@ -1,0 +1,18 @@
+Build a countdown timer web app in a SINGLE HTML file using vanilla HTML, CSS, and JavaScript. No frameworks, no external libraries, no separate files.
+
+Features:
+
+1. Input for minutes (1–120) and a Start button.
+   - Reject invalid input (empty, non-numeric, out of range) by showing an error message in the page, do not use alert().
+2. While running, show remaining time as MM:SS, updating every second.
+3. Pause and Resume buttons (Pause only visible while running, Resume only while paused).
+4. Reset button that stops the timer and clears the display back to the  initial state.
+5. When the timer reaches 00:00, display "Time's up!" and flash the background color 3 times.
+
+Rules:
+
+- The timer must not drift: use a timestamp-based calculation, not just counting setInterval ticks.
+- Starting a new timer while one is running must cancel the old one (no two intervals running at once).
+- All code in one .html file, ready to open in a browser.
+
+After the code, add a short section (3–5 bullet points) explaining how you evented timer drift and double intervals.

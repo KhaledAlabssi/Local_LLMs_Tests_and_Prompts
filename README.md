@@ -1,7 +1,8 @@
 # GPUs & LLMs Testing/Performance
 
-## **Test 1**
+## **Test 1: Countdown timer (mini) app on 5 local LLMs**
 
+[Watch on YT](https://youtu.be/Sz2oMTMLgm8)
 
 ### Enviroment:
 - Llama-cpp Vulkan [b9986](https://github.com/ggml-org/llama.cpp/releases/tag/b9986) (WebUI) 
@@ -15,29 +16,9 @@
 - Command parameters: -np 1, -c 32000, -dev Vulkan1
 
 ### Prompt:
-```
-Build a countdown timer web app in a SINGLE HTML file using vanilla HTML, CSS, and JavaScript. No frameworks, no external libraries, no separate files.
-
-Features:
-
-1. Input for minutes (1–120) and a Start button.
-   - Reject invalid input (empty, non-numeric, out of range) by showing an error message in the page, do not use alert().
-2. While running, show remaining time as MM:SS, updating every second.
-3. Pause and Resume buttons (Pause only visible while running, Resume only while paused).
-4. Reset button that stops the timer and clears the display back to the  initial state.
-5. When the timer reaches 00:00, display "Time's up!" and flash the background color 3 times.
-
-Rules:
-
-- The timer must not drift: use a timestamp-based calculation, not just counting setInterval ticks.
-- Starting a new timer while one is running must cancel the old one (no two intervals running at once).
-- All code in one .html file, ready to open in a browser.
-
-After the code, add a short section (3–5 bullet points) explaining how you evented timer drift and double intervals.
-```
+Check PROMPT-1.txt
 
 ### Result:
-
 
 
 |Modle|Context|Processing|Generating|Duration|Quality|Attempts|
@@ -50,8 +31,37 @@ After the code, add a short section (3–5 bullet points) explaining how you eve
 |GPT OSS 20B|32k|2068 - 1367 t/s|84 - 77 t/s|< 1min|2|1 for code / 2 with file creation|
 
 
-[Watch on YT](https://youtu.be/Sz2oMTMLgm8)
+===
 
+
+## **Test 2: GPU vs CPU | Café bussiness plan**
+
+[Watch on YT](https://youtu.be/4HcVb9xai3E)
+
+### Enviroment for GPU test:
+- LM studio Vulkan 
+- Windows 11
+- **GPU: Intel Arc Pro B70 (32GB) + Nvidia RTX 5070 (12GB)**
+
+### Enviroment for CPU test:
+- LM studio CPU
+- Windows 11
+- **GPU: Intel Ultra 7 265**
+- RAM: 96GB
+
+
+### Prompt:
+Check PROMPT-2.md
+
+### Result:
+
+
+|Test|Time for first token|PP|Generating|
+|---|---|---|---|---|---|---|
+|GPUs|6.45s|4612 t/s|31.58 t/s|
+|Gemma 4 12B|49.76s|4546 t/s| 6.11 t/s|
+
+===
 
 
 
