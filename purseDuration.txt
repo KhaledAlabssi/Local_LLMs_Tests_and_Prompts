@@ -1,0 +1,21 @@
+Write a JavaScript function `parseDuration(input)` that converts a human-readable duration string into total seconds.
+
+Supported formats (case-insensitive, optional spaces):
+- "2h", "30m", "45s"
+- combinations: "1h30m", "2h 15m 10s", "90m 30s"
+- a bare number means seconds: "90" → 90
+
+Rules:
+- Return an integer number of seconds.
+- Return null for invalid input: empty string, null/undefined, unknown units, negative numbers, repeated units ("2h3h"), or units in the wrong order ("30m2h").
+- Do NOT use eval or external libraries.
+
+Then write a plain test section (no test framework, just console.assert calls) covering at least 10 cases, including:
+- "1h30m" → 5400
+- "90" → 90
+- "  2H 5s " → 7205
+- "2h3h" → null
+- "30m2h" → null
+- "" → null
+
+Finally, state in one sentence what your regex or parser does with the input "1.5h" and why.
