@@ -1,0 +1,12 @@
+Read the following text, then produce output following ALL the rules below.
+
+Text:
+"The Meridian Library opened in 1962 with 4,000 books. After the 1988 fire destroyed the east wing, the collection dropped to 31,000 books. A major donation in 1995 added 12,000 volumes, and steady growth since then brought the total to 68,500 books as of 2024. The library employs 14 full-time and 9 part-time staff, and hosted 210 events last year."
+
+Rules:
+1. Output valid JSON only — no prose before or after, no markdown fences.
+2. Use exactly these keys: "founded", "books_current", "books_after_fire", "donation_year", "staff_total", "events_last_year", "unknown_fields".
+3. All numeric values must be JSON numbers, not strings.
+4. staff_total is full-time plus part-time combined.
+5. The text never states how many books existed immediately BEFORE the fire, list any such unanswerable fields (from this list: "books_before_fire", "fire_casualties") in the "unknown_fields" array instead of guessing.
+6. Do not include any keys other than the seven listed.

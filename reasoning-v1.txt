@@ -1,0 +1,22 @@
+Answer each question with the number of the correct option and ONE sentence of justification. No more than one sentence per question.
+
+Question 1.
+A doctor gives you 3 pills and tells you to take one pill every half hour, starting now. You take all pills as instructed. The doctor calls you 45 minutes after you took the first pill. How many pills have you taken by then?
+1. 2
+2. 3
+3. 1
+4. Not enough information.
+=========================
+Question 2.
+A rooster is standing on the exact peak of a barn roof that slopes equally to the east and west. The wind is blowing from the north. The rooster lays nothing, because roosters don't lay eggs, a hen walks up and lays an egg exactly on the peak. With no wind able to hold it, which way does the egg most likely roll?
+1. Either side is equally likely.
+2. East, because of the wind.
+3. West, because of the wind.
+4. Eggs cannot be laid on a roof.
+=========================
+Question 3.
+You are running a race and you overtake the runner in last place. What position are you in now?
+1. This is impossible, you cannot overtake the runner in last place.
+2. Last place.
+3. Second-to-last place.
+4. First place.

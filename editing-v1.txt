@@ -1,0 +1,11 @@
+Rewrite the paragraph below according to ALL of these constraints:
+1. Exactly 3 sentences.
+2. Do not use the words "very", "really", or "important".
+3. Keep every number from the original unchanged.
+4. Write it in a neutral, factual tone (the original is promotional).
+5. The first word of your rewrite must be "Solaris".
+
+Paragraph:
+"Solaris Coffee is a really amazing local roastery that opened in 2019! Our very passionate team roasts over 500 kg of premium beans every single week, and it's incredibly important to us that every one of our 3 locations offers the same unbelievable quality. Customers really love our award-winning espresso blend!"
+
+After the rewrite, list which constraints (by number) you found hardest to satisfy simultaneously, in one sentence.
