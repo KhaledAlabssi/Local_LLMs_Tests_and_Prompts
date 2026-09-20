@@ -1,68 +1,22 @@
-# GPUs & LLMs Testing/Performance
+# LLM Prompts Collection
 
-## **Test 1: Countdown timer (mini) app on 5 local LLMs**
+A curated collection of prompts I use and share on my YouTube channel for testing and working with local LLMs.
 
-[Watch on YT](https://youtu.be/Sz2oMTMLgm8)
+## Prompts
 
-### Enviroment:
-- Llama-cpp Vulkan [b9986](https://github.com/ggml-org/llama.cpp/releases/tag/b9986) (WebUI) 
-- Windows 11
-- CPU: Intel Core 265 Ultra
-- RAM: DDR5 5600 96GB
-- **GPU: Intel Arc Pro B70 (32GB)**
-- Prompt type | Level: Coding | Low
-- Prompt: Countdown Timer project
-- Agent: [Opencode] (https://github.com/anomalyco/opencode)
-- Command parameters: -np 1, -c 32000, -dev Vulkan1
+| Prompt | Description |
+|--------|-------------|
+| [countdown-timer.txt](./countdown-timer.txt) | Build a countdown timer web app in a single HTML file with vanilla HTML, CSS, and JS |
+| [cafe-business-plan.md](./cafe-business-plan.md) | Create a complete investor-grade business plan for a café in Munich |
+| [editing-v1.txt](./editing-v1.txt) | Rewrite a paragraph under strict constraints (sentence count, forbidden words, tone) |
+| [habit-tracker.md](./habit-tracker.md) | Build a single-page habit tracker with vanilla JS and LocalStorage |
+| [priorit-matrix-board.md](./priorit-matrix-board.md) | Build an Eisenhower Priority Matrix web app with drag-and-drop and LocalStorage |
+| [purseDuration.txt](./purseDuration.txt) | Parse human-readable duration strings (e.g. "1h30m") into total seconds |
+| [reading-tracker.md](./reading-tracker.md) | Build a reading list web app with vanilla JS and LocalStorage |
+| [reasoning-v1.txt](./reasoning-v1.txt) | Logic and reasoning questions with one-sentence justifications |
+| [structured-v1.txt](./structured-v1.txt) | Extract and structure information from a passage following strict output rules |
 
-### Prompt:
-Check PROMPT-1.txt
+## Connect
 
-### Result:
-
-
-|Modle|Context|Processing|Generating|Duration|Quality|Attempts|
-|---|---|---|---|---|---|---|
-|Ornith 1 9B|32k|1850 - 1550 t/s|47 - 43 t/s|< 1min|6|1|
-|Gemma 4 12B|32k|1800 - 1300 t/s| 27 - 23 t/s|< 3min|8|1 / 2 to have the file creted|
-|Gemma 4 26B A4B|32k|1290 - 1083 t/s|52 - 48 t/s|< 2min |9|1 for code / 2 to have the file created|
-|Qwen 3.6 27B|10k|703 - 310 t/s|21 - 17 t/s|< 5min|5|2|
-|Qwem 3.6 35B A3B|8k|1384 - 1198 t/s|67 - 63 t/s|x|x|x|
-|GPT OSS 20B|32k|2068 - 1367 t/s|84 - 77 t/s|< 1min|2|1 for code / 2 with file creation|
-
-
-===
-
-
-## **Test 2: GPU vs CPU | Café bussiness plan**
-
-[Watch on YT](https://youtu.be/4HcVb9xai3E)
-
-### Enviroment for GPU test:
-- LM studio Vulkan 
-- Windows 11
-- **GPU: Intel Arc Pro B70 (32GB) + Nvidia RTX 5070 (12GB)**
-
-### Enviroment for CPU test:
-- LM studio CPU
-- Windows 11
-- **GPU: Intel Ultra 7 265**
-- RAM: 96GB
-
-
-### Prompt:
-Check PROMPT-2.md
-
-### Result:
-
-
-|Test|Time for first token|PP|Generating|
-|---|---|---|---|---|---|---|
-|GPUs|6.45s|4612 t/s|31.58 t/s|
-|Gemma 4 12B|49.76s|4546 t/s| 6.11 t/s|
-
-===
-
-
-
-
+- [YouTube](https://www.youtube.com/@testination1)
+- [LinkedIn](https://linkedin.com/in/khaled-alabssi)
