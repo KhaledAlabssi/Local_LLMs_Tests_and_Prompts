@@ -15,6 +15,8 @@ A curated collection of prompts I use and share on my YouTube channel for testin
 | [reading-tracker.md](./reading-tracker.md) | Build a reading list web app with vanilla JS and LocalStorage |
 | [reasoning-v1.txt](./reasoning-v1.txt) | Logic and reasoning questions with one-sentence justifications |
 | [structured-v1.txt](./structured-v1.txt) | Extract and structure information from a passage following strict output rules |
+| [bakery.md](./bakery.md) | Create a complete investor-grade business plan for a bakery in Munich |
+
 
 ## Connect
 
